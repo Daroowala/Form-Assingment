@@ -8,21 +8,21 @@
   <body>
     <h1>User Registration Form</h1>
 <form action="http://www.example.com/subscrib.php" method="get">
-   <label><p>First Name:<input placeholder="First Name" required type="text" /> </label><br /></p>
-   <label> <p>Last Name:<input placeholder="Last Name" required type="text" /></label> <br /></p>
-  <label><p>Password:<input placeholder="Password" required type="password" /></label></p>
-   <label><p>Bio:<textarea name="" id="" cols="40" rows="3"></textarea></p></label>
+  <p><label for="First name">First name:</label><input id="First name" placeholder="First Name" required type="text" /> <br /></p>
+  <p><label for="Last Name">Last Name:</label><input id="Last Name" placeholder="Last Name" required type="text" /> <br /></p>
+  <p><label for="Password">Password:</label><input id="Password" placeholder="Password" required type="password" /></p>
+  <p><label for="Bio">Bio:</label><textarea name="" id="Bio" cols="40" rows="3"></textarea></p>
     <Fieldset>
       <Legend>Gender:</Legend><br />
-     <label> <input required type="radio" name="Gender" value="Male" />Male </label><br />
-      <label><input required type="radio" name="Gender" value="Female" />Female </label><br />
-      <label><input required type="radio" name="Gender" value="Other" />Other</label>
+      <label for="Male"><input id="Male" required type="radio" name="Gender" value="Male" />Male</label><br />
+      <label for="Female"><input id="Female" required type="radio" name="Gender" value="Female" />Female</label><br />
+     <label for="Other"><input id="Other" required type="radio" name="Gender" value="Other" />Other</label>
     </Fieldset>
     <p>
      <Fieldset><Legend>Interests:</Legend><br />
-      <label><input type="checkbox" name="Interests" value="Music" />Music</label><br />
-      <label> <input type="checkbox" name="Interests" value="Sports" />Sports</label><br />
-      <label><input type="checkbox" name="Interests" value="Reading" />Reading</label></Fieldset>
+     <label for="Music"><input id="Music" type="checkbox" name="Interests" value="Music" />Music</label><br />
+       <label for="Sports"><input id="Sports" type="checkbox" name="Interests" value="Sports" />Sports</label><br />
+      <label for="Reading"><input id="Reading" type="checkbox" name="Interests" value="Reading" />Reading</label></Fieldset>
     </p>
     <p>
        Country:
@@ -34,7 +34,6 @@
         <option value="UK">UK</option>
         <br />
         <option value="Saudia Arabia">Saudia Arabia</option>
-        <br />
       </select>
     </p>
     <p>
@@ -69,9 +68,12 @@
       Search:
       <input placeholder="Search" required type="search" />
     </p>
-
+<p>
+  Url:
+  <input placeholder="Url" required type ="url">
+</p>
     <p>
-      <input type="image" src="../Form Assingment/image/th.jpg" width="100" height="100">
+      <input type="image" src="../Form Assingment/image/th.jpg" alt="" width="100" height="100">
     </p>
   </form>
   </body>
